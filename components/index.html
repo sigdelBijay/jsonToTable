@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>json data to table</title>
+		<link rel="stylesheet" type="text/css" href="../resources/custom.css">
+		<link rel="stylesheet" type="text/css" href="../resources/bootstrap.min.css">
+	</head>
+	<body>
+		<div ng-app="jsonApp" class="background">
+			<div ng-controller="JsonAppController" class="view-background">
+				<div class="container" ng-init="getKeyValue(data)">
+					<h3 class="header-class">Table Listed</h3>
+					<div class="table-listed" >
+						<table width="750px">
+							<thead>
+								<th ng-repeat="header in tableHeaders">
+									<span>{{header}}</span>
+								</th>
+							</thead>
+							<tbody>
+									<tr ng-repeat="item in data track by $index">	
+										<td ng-repeat = "header in tableHeaders">
+											<span> {{item[header]}} 
+											</span>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="../resources/angular.min.js"></script>
+		<script type="text/javascript" src="./app.js"></script>
+	</body>
+</html>

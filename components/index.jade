@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>json data to table</title>
+		<link rel="stylesheet" type="text/css" href="../resources/custom.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div ng-app="jsonApp" class="row">
+			<div ng-controller="JsonAppController" class="col-md-9 col-xs-9">
+				<div class="container">
+					<div class="table-listed">
+					<table width="750px">
+						<tr ng-repeat="item in keys">
+							<th class="black">{{item.name}}</th>
+						</tr>
+					</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script type="text/javascript" src="./app.js"></script>
+	</body>
+</html>

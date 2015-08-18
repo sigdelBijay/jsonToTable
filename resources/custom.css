@@ -1,0 +1,41 @@
+.background{
+	width: 100%;
+}
+
+.background *{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.view-background{
+	width: 80%;
+	background-color: #f4f4f4;
+}
+
+.container{
+	width: 100%; 
+}
+
+.table-listed{
+	min-height:600px;
+	height: auto;
+	width: 750px;
+	color: blue;
+}
+
+th{
+	color: black;
+	border: 1px solid blue;
+}
+
+th:hover{
+	background-color: blue;
+}
+
+td{
+	border: 1px solid pink;
+}
+
+.header-class{
+	text-align: center;
+}
